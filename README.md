@@ -1,6 +1,6 @@
 This is a web scraping tool, This Tool allows users to input a URL and display scraped data retrieved from a backend scraping service.
 
-Features:-
+#Features:-
 
 Input a website URL to scrape data from.
 
@@ -10,7 +10,7 @@ Display the structured scraped data in a readable format.
 
 Shows loading and error states.
 
-Project Structure:-
+#Project Structure:-
 
 /src
   /components    
@@ -22,7 +22,7 @@ Project Structure:-
   index.css      
 index.html       
 
-Usage:-
+#Usage:-
 
 Enter a valid URL in the input field.
 
@@ -30,7 +30,7 @@ Click Scrape.
 
 The data fetched from the backend will be displayed in JSON format.
 
-Tech Stack-
+#Tech Stack-
 
 React
 
