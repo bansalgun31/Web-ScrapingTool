@@ -40,4 +40,7 @@ Vite (for fast React development)
 
 Node.js (expected for backend)
 
+This is a assignment link you can see the project directly :-
+https://web-scrapingtool.netlify.app/
+
 
