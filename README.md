@@ -1,46 +1,73 @@
-This is a web scraping tool, This Tool allows users to input a URL and display scraped data retrieved from a backend scraping service.
+# Web Scraping Tool
 
-#Features:-
+A small frontend demo that lets users enter a URL and display scraped data returned from a backend scraping service. Built with React, TypeScript, Vite and Tailwind CSS.
 
-Input a website URL to scrape data from.
+**Features:**
+- **URL input:** Enter a website URL to scrape.
+- **Scraping request:** Sends requests to a backend scraping service (mock or real).
+- **Results display:** Shows structured scraped data and handles loading/error states.
 
-Send a request to the backend Node.js scraper.
+**Live demo:** https://web-scrapingtool.netlify.app/ (assignment/demo site)
 
-Display the structured scraped data in a readable format.
+**Getting Started**
 
-Shows loading and error states.
+Prerequisites:
 
-#Project Structure:-
+- Node.js (v18+ recommended)
+- npm (or your preferred Node package manager)
 
-/src
-  /components    
-  /services      
-  /types         
-  /utils         
-  App.tsx        
-  main.tsx       
-  index.css      
-index.html       
+Install and run in development mode:
 
-#Usage:-
+```powershell
+npm install
+npm run dev
+```
 
-Enter a valid URL in the input field.
+Build for production:
 
-Click Scrape.
+```powershell
+npm run build
+npm run preview
+```
 
-The data fetched from the backend will be displayed in JSON format.
+**Project Structure**
 
-#Tech Stack-
+- `index.html` — App entry page.
+- `src/main.tsx` — App bootstrap and global providers.
+- `src/App.tsx` — Main app layout.
+- `src/index.css` — Tailwind + global styles.
+- `src/components/` — Reusable React components (e.g. `CompanyCard.tsx`, `ConfigPanel.tsx`, `ProgressStats.tsx`).
+- `src/services/` — Scraper service & mocks (e.g. `mockScraper.ts`).
+- `src/types/` — TypeScript types (`scraper.ts`).
+- `src/utils/` — Helpers (`export.ts`, `validation.ts`).
 
-React
+**Scripts** (from `package.json`)
 
-TypeScript
+- `npm run dev` — Start dev server (Vite).
+- `npm run build` — Build production assets.
+- `npm run preview` — Preview the built app.
+- `npm run lint` — Run ESLint.
 
-Vite (for fast React development)
+**Configuration**
 
-Node.js (expected for backend)
+- Vite config: `vite.config.ts`.
+- TypeScript config: `tsconfig.json` / `tsconfig.app.json`.
+- Tailwind: `tailwind.config.js` and `postcss.config.js`.
 
-This is a assignment link you can see the project directly :-
-https://web-scrapingtool.netlify.app/
+**Usage Notes**
+
+- The UI expects a backend scraping endpoint. During development the app may use `src/services/mockScraper.ts` to return fake data.
+- If you wire a real backend, update the service client in `src/services/` to point to your API.
+
+**Contributing**
+
+1. Fork the repo and create a branch for your change.
+2. Open a PR describing the change.
+
+**License & Contact**
+
+Please refer to the LICENSE file in the repository.
+
+Questions or improvements — open an issue or a PR.
 
 
