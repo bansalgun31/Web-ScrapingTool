@@ -68,6 +68,6 @@ npm run preview
 
 Please refer to the LICENSE file in the repository.
 
-Questions or improvements — open an issue or a PR.
+Questions or improvements — open an issue or a PR. 
 
 
